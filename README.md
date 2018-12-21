@@ -25,7 +25,7 @@ Value	EEEEEEEE	MMMMMMMM	MMMMMMMM	MMMMMMMM	MMMMMMMM	SMMMMMMM
 
 E: exponent, M: mantissa, S: sign bit
 
-conversion tests (using the 'convert' function, see below)
+float conversion tests
 
 ```
 48 bit hex        | PRN file | computed          | syntax
