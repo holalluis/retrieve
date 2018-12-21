@@ -14,15 +14,18 @@ feature reals as a variable type.
 A Pascal real has a value range of 2.9 x 10-39 to 1.7 x 1038.
 The structure of a Pascal real is seen in the diagram below.
 
+```
 Byte	0	        1	        2	        3	        4	        5
 Bit	  01234567	01234567	01234567	01234567	01234567	01234567
 Value	EEEEEEEE	MMMMMMMM	MMMMMMMM	MMMMMMMM	MMMMMMMM	SMMMMMMM
+```
 
 E: exponent, M: mantissa, S: sign bit
 
 conversion tests (using the 'convert' function, see below)
+
 48 bit hex        | PRN file | computed          | syntax
-------------------+----------+-------------------+----------
+------------------+----------+-------------------+------------------------
 8d 25 7c e2 9d 07 | 4339.736 | 4339.735588349402 | convert(0x8d257ce29d07)
 88 a9 f6 62 91 42 |  194.568 | 194.5679163134191 | convert(0x88a9f6629142)
 8c 17 8f 82 1d 1f | 2545.844 | 2545.844374742359 | convert(0x8c178f821d1f)
@@ -40,3 +43,4 @@ conversion tests (using the 'convert' function, see below)
 8d ed 24 81 27 30 | 5636.938 | 5636.938058711588 | convert(0x8ded24812730)
 84 78 70 65 4c 63 |   14.206 | 14.2061514275847  | convert(0x847870654c63)
 8d d5 63 c1 ab 07 | 4341.469 | 4341.469428695738 | convert(0x8dd563c1ab07)
+
