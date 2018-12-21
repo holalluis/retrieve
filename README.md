@@ -3,9 +3,7 @@ Translation of "RETRIEVE.PAS" (Pascal programming language) to Python3 ("retriev
 
 Created by Lluís Bosch (lbosch@icra.cat) on 2018-12-20. Requested by George Ekama
 
-The key on converting this has been dealing with the
-Turbo Pascal 48 bit "Real" type 
-found on: http://www.shikadi.net/moddingwiki/Turbo_Pascal_Real 
+The specification of the Turbo Pascal 48 bit "Real" type was found on: http://www.shikadi.net/moddingwiki/Turbo_Pascal_Real 
 
 While most languages use a 32-bit or 64-bit floating point decimal variable,
 usually called single or double, Turbo Pascal featured an uncommon 48-bit float
@@ -48,4 +46,3 @@ float conversion tests
 84 78 70 65 4c 63 |   14.206 | 14.2061514275847  | convert(0x847870654c63)
 8d d5 63 c1 ab 07 | 4341.469 | 4341.469428695738 | convert(0x8dd563c1ab07)
 ```
-
