@@ -18,9 +18,9 @@ A Pascal real has a value range of 2.9 x 10-39 to 1.7 x 1038.
 The structure of a Pascal real is seen in the diagram below.
 
 ```
-Byte	0	        1	        2	        3	        4	        5
-Bit	  01234567	01234567	01234567	01234567	01234567	01234567
-Value	EEEEEEEE	MMMMMMMM	MMMMMMMM	MMMMMMMM	MMMMMMMM	SMMMMMMM
+Byte  0        1        2        3        4        5
+Bit   01234567 01234567 01234567 01234567 01234567 01234567
+Value EEEEEEEE MMMMMMMM MMMMMMMM MMMMMMMM MMMMMMMM SMMMMMMM
 ```
 
 E: exponent, M: mantissa, S: sign bit
