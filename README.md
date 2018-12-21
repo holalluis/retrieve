@@ -1,5 +1,6 @@
 # retrieve
-Translation of "RETRIEVE.PAS" (Pascal programming language) to to Python3 ("retrieve.py")
+Translation of "RETRIEVE.PAS" (Pascal programming language) to Python3 ("retrieve.py")
+
 Created by Lluís Bosch (lbosch@icra.cat) on 2018-12-20. Requested by George Ekama
 
 The key on converting this has been dealing with the
