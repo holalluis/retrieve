@@ -96,27 +96,24 @@ def convert(n):
   '''
 
 #read a "file.did"
-assert(len(sys.argv)>3), "Usage: ./retrieve.py file.did [10/15/30] [u/i]"
+assert(len(sys.argv)>3), "Usage: ./retrieve.py file.did [data_interval:10,15,30] [NoDiVars:17,18]"
 did_filename  = sys.argv[1]      #filename.did
 data_interval = int(sys.argv[2]) #10, 15 or 30
-program_used  = sys.argv[3]      #u or i
+NoDiVars      = int(sys.argv[3]) #17, 18 number of variables
 
-#assert data_interval and program_used
+#assert data_interval and NoDiVars
 assert(
   data_interval==10 or
   data_interval==15 or
   data_interval==30), 'Data interval must be "10", "15" or "30"'
 assert(
-  program_used.upper() == 'U' or program_used.upper() == 'I'
-), 'Program used (UCTOLD/IAWPRC) must be "U" or "I"'
+  type(NoDiVars)==int),'NoDiVars must be an integer number'
 
 #calculate data per day and number of dimensions 'NoDiVars'
 data_per_day=int(24*60.0/int(data_interval))
-if program_used.upper()=='U': NoDiVars=18
-if program_used.upper()=='I': NoDiVars=17
 
 #write spreadsheet headers
-print(did_filename, data_interval, program_used)
+print(did_filename, data_interval, NoDiVars)
 print("REACTOR; Time; ",end='')
 for i in range(NoDiVars): print("Var {}; ".format(i+1),end='')
 print(""); #add a newline after the headers
