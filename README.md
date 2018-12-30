@@ -3,7 +3,7 @@ Translation of "RETRIEVE.PAS" (Pascal programming language) to Python3 ("retriev
 
 Created by Lluís Bosch (lbosch@icra.cat) on 2018-12-20.
 
-Requested by George Ekama
+Request by George Ekama:
 ```
 There are 2 old programs (UCTOLD and UCTPHO) that run as “UCTOLD.exe” and
 “UCTPHO.exe” files which were generated (~1990) by compiling TurboPascal 4.0
