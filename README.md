@@ -1,3 +1,8 @@
+# how to use
+Usage:   ./retrieve.py [filename.did] [data-interval] [NoDiVars]
+
+Example: ./retrieve.py dp16setp.did 15 23
+
 # retrieve
 Translation of "RETRIEVE.PAS" (Pascal programming language) to Python3 ("retrieve.py")
 
